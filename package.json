@@ -1,0 +1,20 @@
+{
+  "name": "cordova-plugin-ia-imei",
+  "version": "1.0.0",
+  "description": "This plugin allows you to read the IMEI of an Android device. Intended for use in enterprise and kiosk apps.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicolaasZA/cordova-plugin-ia-imei.git"
+  },
+  "keywords": [
+    "cordova",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Nicolaas Pretorius",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NicolaasZA/cordova-plugin-ia-imei/issues"
+  },
+  "homepage": "https://github.com/NicolaasZA/cordova-plugin-ia-imei#readme"
+}
