@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin
-		xmlns="http://apache.org/cordova/ns/plugins/1.0"
-		xmlns:android="http://schemas.android.com/apk/res/android"
-		id="cordova-plugin-ia-imei"
-		version="1.0.0">
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+	xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-ia-imei" version="1.0.0">
 
 	<name>AndroidIMEI</name>
 
@@ -14,20 +11,25 @@
 	<license>MIT</license>
 
 	<engines>
-			<engine name="cordova" version=">=3.0.0" />
+		<engine name="cordova" version=">=3.0.0" />
 	</engines>
 
 	<js-module src="www/androidimei.js" name="AndroidIMEI">
-			<clobbers target="plugins.androidimei" />
+		<clobbers target="plugins.androidimei" />
 	</js-module>
 
 	<!-- android -->
 	<platform name="android">
-			<config-file target="res/xml/config.xml" parent="/*">
-				<feature name="AndroidIMEI">
-						<param name="android-package" value="za.co.klausius.plugins.androidimei.AndroidIMEI" />
-				</feature>
-			</config-file>
-			<source-file src="src/android/AndroidIMEI.java" target-dir="src/za/co/klausius/plugins/androidimei" />
+		<config-file target="AndroidManifest.xml" parent="/*">
+			<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+		</config-file>
+
+		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="AndroidIMEI">
+				<param name="android-package" value="za.co.klausius.plugins.androidimei.AndroidIMEI" />
+			</feature>
+		</config-file>
+
+		<source-file src="src/android/AndroidIMEI.java" target-dir="src/za/co/klausius/plugins/androidimei" />
 	</platform>
 </plugin>
