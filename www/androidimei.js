@@ -1,4 +1,4 @@
-cordova.define("cordova-plugin-ia-imei.AndroidIMEI", function (require, exports, module) {
+// cordova.define("cordova-plugin-ia-imei.AndroidIMEI", function (require, exports, module) {
 	"use strict";
 	function AndroidIMEI() { }
 
@@ -17,4 +17,4 @@ cordova.define("cordova-plugin-ia-imei.AndroidIMEI", function (require, exports,
 
 	cordova.addConstructor(AndroidIMEI.install);
 
-});
+// });
